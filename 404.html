@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3D3062, #6E366F);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+            color: #fff;
+            animation: fadeInUp 1s ease;
+        }
+        .emoji {
+            font-size: 100px;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #f0f0f0;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+        .btn-home {
+            display: block;
+            margin: 20px auto;
+            padding: 16px 24px;
+            background-color: #2ecc71; /*New green shade */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-home:hover {
+            background-color: #27ae60; /* New green shade on hover */
+            transform: scale(1.05);
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">😕</div>
+        <h1>404 - Page Not Found</h1>
+        <p>Oops! It looks like you're lost!!.</p>
+        <button class="btn-home" onclick="goHome()">Go Back to Home Page</button>
+    </div>
+    <script>
+        function goHome() {
+            // Replace this with the URL of your home page
+            window.location.href = "/";
+        }
+    </script>
+</body>
+</html>
